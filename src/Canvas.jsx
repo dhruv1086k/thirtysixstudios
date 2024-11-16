@@ -16,10 +16,10 @@ export default function Canvas({ details }) {
       ease: "linear",
       repeat: -1,
       onUpdate: () => {
-        setIndex({value: Math.round(index.value)});
-      }
-    })
-  })
+        setIndex({ value: Math.round(index.value) });
+      },
+    });
+  });
 
   useEffect(() => {
     const scale = window.devicePixelRatio;
@@ -40,6 +40,8 @@ export default function Canvas({ details }) {
   return (
     <>
       <canvas
+        data-scroll
+        data-scroll-speed={Math.random().toFixed(1)}
         ref={canvasRef}
         className="absolute"
         style={{
@@ -47,7 +49,7 @@ export default function Canvas({ details }) {
           left: `${details.left}%`,
           height: `${details.size}px`,
           width: `${details.size}px`,
-          zIndex: details.zIndex
+          zIndex: details.zIndex,
         }}
       ></canvas>
     </>

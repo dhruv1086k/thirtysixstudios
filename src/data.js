@@ -5,8 +5,8 @@ export default [  //pila wala bracket first map
             numImages: 150,
             duration: 3,
             size: 188,
-            top: 16,
-            left: 17,
+            top: 72,
+            left: 50,
             zIndex: 0,
         },
         {
@@ -42,7 +42,7 @@ export default [  //pila wala bracket first map
             duration: 3,
             size: 269,
             top: 24,
-            left: 68,
+            left: 75,
             zIndex: 0,
         },
         {
